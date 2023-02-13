@@ -4,6 +4,8 @@ import com.zzptc.shopping.entity.SpGoods;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
 /**
  * <p>
  * 商品表 Mapper 接口
@@ -14,5 +16,5 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface SpGoodsMapper extends BaseMapper<SpGoods> {
-
+    List<SpGoods> getAll(Integer pageIndex, Integer pageSize);
 }
