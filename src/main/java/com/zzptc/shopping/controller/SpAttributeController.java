@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author cxsxwx
  * @since 2023-02-12
  */
+
 @RestController
 @RequestMapping("/sp-attribute")
 public class SpAttributeController {
